@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -42,6 +42,7 @@
           <img
             src="http://openweathermap.org/img/wn/10d@2x.png"
             alt="weather-icon"
+            class="weather-icon"
           />
           <p class="temperature">26</p>
         </div>
@@ -50,25 +51,26 @@
         <div class="row">
           <div class="item">
             <div class="label">Mặt trời mọc</div>
-            <div class="value">6:16</div>
+            <div class="value sunrise">6:16</div>
           </div>
           <div class="item">
             <div class="label">Mặt trời lặn</div>
-            <div class="value">17:16</div>
+            <div class="value sunset">17:16</div>
           </div>
         </div>
         <div class="row">
           <div class="item">
             <div class="label">Độ ẩm</div>
-            <div class="value">73%</div>
+            <div class="value"><span class="humidity">73</span>%</div>
           </div>
           <div class="item">
             <div class="label">Gió</div>
-            <div class="value">5.54 km/h</div>
+            <div class="value"><span class="wind-speed">5.54</span> km/h</div>
           </div>
         </div>
       </div>
     </div>
     <script src="./index.js"></script>
+    <script src="./moment.js"></script>
   </body>
 </html>
